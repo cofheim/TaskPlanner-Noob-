@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq; // Не забудь добавить это пространство имён
+using System.Linq;
 using Newtonsoft.Json;
 
 namespace ConsoleApp3
@@ -12,7 +12,6 @@ namespace ConsoleApp3
         {
             var taskList = new TaskList();
 
-            // Автоматическая загрузка задач при запуске программы
             taskList.LoadTasksFromFile("tasks.json");
 
             while (true)
